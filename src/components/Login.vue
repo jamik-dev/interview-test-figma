@@ -7,13 +7,13 @@
                     <p class="form_title" style="text-align: center">Добавить компанию</p>
                     <form style="margin-top: 32px;" action="">
                         <v-row>
-                            <v-col cols="6">
+                            <v-col cols="12" md="6" sm="12">
                                 <label class="over_input">
                                     <input type="text" required placeholder=" " class="input_field">
                                     <span class="over_placeholder">Name</span>
                                 </label>
                             </v-col>
-                            <v-col cols="6">
+                            <v-col cols="12" md="6" sm="12">
                                 <label class="over_input">
                                     <input type="tel" required placeholder=" " class="input_field">
                                     <span class="over_placeholder">Phone number</span>
@@ -21,13 +21,13 @@
                             </v-col>
                         </v-row>
                         <v-row>
-                            <v-col cols="6">
+                            <v-col cols="12" md="6" sm="12">
                                 <label class="over_input">
                                     <input type="text" required placeholder=" " class="input_field">
                                     <span class="over_placeholder">Location</span>
                                 </label>
                             </v-col>
-                            <v-col cols="6">
+                            <v-col cols="12" md="6" sm="12">
                                 <label class="over_input">
                                     <input type="text" required placeholder=" " class="input_field">
                                     <span class="over_placeholder">Address</span>
@@ -36,7 +36,7 @@
                         </v-row>
                         <div class="divider"></div>
                         <v-row>
-                            <v-col cols="6">
+                            <v-col cols="12" md="6" sm="12">
                                 <label class="over_input">
                                     <input type="text" required placeholder=" " class="input_field">
                                     <span class="over_placeholder">ИНН</span>
@@ -45,13 +45,13 @@
                         </v-row>
                         <div class="divider"></div>
                         <v-row>
-                            <v-col cols="6">
+                            <v-col cols="12" md="6" sm="12">
                                 <label class="over_input">
                                     <input type="text" required placeholder=" " class="input_field">
                                     <span class="over_placeholder">Company Director</span>
                                 </label>
                             </v-col>
-                            <v-col cols="6">
+                            <v-col cols="12" md="6" sm="12">
                                 <label class="over_input">
                                     <input type="text" required placeholder=" " class="input_field">
                                     <span class="over_placeholder">Company name</span>
@@ -59,13 +59,13 @@
                             </v-col>
                         </v-row>
                         <v-row>
-                            <v-col cols="6">
+                            <v-col cols="12" md="6" sm="12">
                                 <label class="over_input">
                                     <input type="text" required placeholder=" " class="input_field">
                                     <span class="over_placeholder">Company Address</span>
                                 </label>
                             </v-col>
-                            <v-col cols="6">
+                            <v-col cols="12" md="6" sm="12">
                                 <label class="over_input">
                                     <input type="text" required placeholder=" " class="input_field">
                                     <span class="over_placeholder">Register date</span>
@@ -73,7 +73,7 @@
                             </v-col>
                         </v-row>
                         <v-row>
-                            <v-col cols="6">
+                            <v-col cols="12" md="6" sm="12">
                                 <label class="over_input">
                                     <input type="text" required placeholder=" " class="input_field">
                                     <span class="over_placeholder">Company phone</span>
@@ -82,13 +82,13 @@
                         </v-row>
                         <div class="divider"></div>
                         <v-row>
-                            <v-col cols="6">
+                            <v-col cols="12" md="6" sm="12">
                                 <label class="over_input">
                                     <input type="text" required placeholder=" " class="input_field">
                                     <span class="over_placeholder">MFO</span>
                                 </label>
                             </v-col>
-                            <v-col cols="6">
+                            <v-col cols="12" md="6" sm="12">
                                 <label class="over_input">
                                     <input type="text" required placeholder=" " class="input_field">
                                     <span class="over_placeholder">Payment account</span>
@@ -96,13 +96,13 @@
                             </v-col>
                         </v-row>
                         <v-row>
-                            <v-col cols="6">
+                            <v-col cols="12" md="6" sm="12">
                                 <label class="over_input">
                                     <input type="text" required placeholder=" " class="input_field">
                                     <span class="over_placeholder">Reg. code vat</span>
                                 </label>
                             </v-col>
-                            <v-col cols="6">
+                            <v-col cols="12" md="6" sm="12">
                                 <label class="over_input">
                                     <input type="text" required placeholder=" " class="input_field">
                                     <span class="over_placeholder">OKED</span>
@@ -176,8 +176,8 @@ export default {
     color: #fff;
     width: 100%;
 }
-.col-6{
-    padding: 8px;
+.col-md-6{
+    padding: 8px; 
 }
 .btn-wrapper{
     margin-top: 20px;
@@ -227,5 +227,18 @@ input:focus + span, input:not(:-ms-input-placeholder) + span {
   color: #6C757D;
   letter-spacing: 0.05em;
   transform: scale(0.75) translateY(-100%) translateX(-30px);
+}
+
+/* responsivity */
+
+@media (min-width: 601px) and (max-width: 959px) {
+    .form-wrapper{
+        width: 430px;
+    }
+}
+@media (min-width: 0px) and (max-width: 600px) {
+    .form-wrapper{
+        width: 320px;
+    }
 }
 </style>
